@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Signup</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Signup.css">
+</head>
+
+<body>
+    <div class="signup">
+        <div class="signup__section1">
+            <h1>VakaPo Signup</h1> <br>
+            <p>Create Your Account.</p> <br>
+        </div>
+        <div class="signup__section2">
+            <form>
+                <div class="signup__input">
+                    <label for="email">Email </label>
+                    <input type="email" id="email" name="email" required> <br> <br>
+                </div>
+                <div class="signup__input">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required> <br> <br>
+                </div>
+                <div class="signup__input">
+                    <label for="role">Role</label>
+                    <select class="dropdown" id="role" name="role" required>
+                        <option value="">-- Select --</option>
+                        <option value="Patient">Patient</option>
+                        <option value="Hospital">Hospital</option>
+                        <option value="Clinic">Clinic</option>
+                    </select>
+                </div>
+
+                <!-- Patient Informations -->
+                <div class="signup__patient">
+                    <div class="signup__input">
+                        <label for="pname">Patient Name </label>
+                        <input type="text" id="pname" name="pname" required> <br> <br>
+                    </div>
+                    <div class="signup__input">
+                        <label for="dob">Date Of Birth</label>
+                        <input type="date" id="dob" name="dob" required> <br> <br>
+                    </div>
+                    <div class="signup__input">
+                        <label for="gender">Gender</label>
+                        <select class="dropdown" id="gender" name="gender" required>
+                            <option value="">-- Select --</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div class="signup__input">
+                        <label for="nic">NIC Number</label>
+                        <input type="number" id="nic" name="nic" required> <br> <br>
+                    </div>
+                </div>
+
+                <!-- Hospital Informations -->
+                <div class="signup__hospital">
+                    <div class="signup__input">
+                        <label for="hname">Hospital Name</label>
+                        <input type="text" id="hname" name="hname" required> <br> <br>
+                    </div>
+                    <div class="signup__input">
+                        <label for="hname"> Registration Number</label>
+                        <input type="text" id="rnumber" name="rnumber" required> <br> <br>
+                    </div>
+                    <div class="signup__input">
+                        <label for="rcertificate">Registration Certificate </label>
+                        <input type="file" id="rcertificate" name="rcertificate" required> <br> <br>
+                    </div>
+                    <div class="signup__input">
+                        <label for="institution">Type Of Institution</label>
+                        <select class="dropdown" id="institution" name="institution" required>
+                            <option value="">-- Select --</option>
+                            <option value="Government">Government</option>
+                            <option value="Private">Private</option>
+                        </select>
+                    </div>
+                    <div class="signup__input">
+                        <label for="address">Address </label>
+                        <input type="text" id="address" name="address" required> <br> <br>
+                    </div>
+                </div>
+
+                <!-- Clinic Informations -->
+                <div class="signup__clinic">
+                    <div class="signup__input">
+                        <label for="hname">Clinic Name</label>
+                        <input type="text" id="hname" name="hname" required> <br> <br>
+                    </div>
+                    <div class="signup__input">
+                        <label for="hname"> Registration Number</label>
+                        <input type="text" id="rnumber" name="rnumber" required> <br> <br>
+                    </div>
+                    <div class="signup__input">
+                        <label for="rcertificate">Registration Certificate </label>
+                        <input type="file" id="rcertificate" name="rcertificate" required> <br> <br>
+                    </div>
+                    <div class="signup__input">
+                        <label for="institution">Type Of Institution</label>
+                        <select class="dropdown" id="institution" name="institution" required>
+                            <option value="">-- Select --</option>
+                            <option value="Government">Government</option>
+                            <option value="Private">Private</option>
+                        </select>
+                    </div>
+                    <div class="signup__input">
+                        <label for="address">Address </label>
+                        <input type="text" id="address" name="address" required> <br> <br>
+                    </div>
+                </div>
+
+                <div class="signup__input">
+                    <label for="contact">Contact Number</label>
+                    <input type="number" id="contact" name="contact" required> <br> <br>
+                </div>
+                <div class="signup__input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required> <br> <br>
+                </div>
+                <div class="signup__input">
+                    <label for="address">Address</label>
+                    <input type="address" id="address" name="address" required> <br> <br>
+                </div>
+                <div class="signup__input">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required> <br> <br>
+                </div>
+                <div class="signup__input">
+                    <label for="retypepassword">Re-Type Password</label>
+                    <input type="retypepassword" id="retypepassword" name="retypepassword" required> <br> <br>
+                </div>
+                <button type="submit">Signup</button>
+            </form>
+            <div class="signup__section3">
+                <p>Already have an account? <a href="../Login Page/Login.html">Login</a></p> <br>
+            </div>
+            <div class="signup__section4">
+                <p>&copy; 2025 VakaPo. All Rights Reserved</p>
+
+            </div>
+        </div>
+
+    </div>
+    <script src="./Signup.js"></script>
+</body>
+
+</html>
