@@ -206,111 +206,68 @@ html {
     transition: 0.5s;
 }
 
-/* appointment booking*/
+/* feedback */
 
-.appointment {
-    text-align: center;
-    color: white;
+.feedback {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20px;
+    align-items: center;
 }
 
-.appointment__section1 h1 {
+.feedback__section2 {
+    margin-right: 20%;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     color: #1E489E;
 }
 
-.appointment__section2 {
-    padding: 40px;
-    background-color: #1157ee;
-    width: 50%;
-    margin-left: 23%;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.feedback__section1 img {
+    width: 70%;
+    height: 50%;
 }
 
-.appointment__section2 h2 {
-    color: white;
-}
-
-.appointment__section3 {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 20px;
-}
-
-.appointment__section3__sub1 select,
-.appointment__section3__sub2 select,
-.appointment__section4__sub1 input,
-.appointment__section4__sub2 select {
-    padding: 10px;
-    border-radius: 10px;
-    border: 1px solid black;
-    width: 200px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.feedback__section1__sub {
     margin-top: 10px;
-}
-
-.appointment__section4 {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    padding: 20px;
-}
-
-.appointment__section1 button {
-    padding: 15px;
-    border-radius: 10px;
-    border: none;
-    background-color: #210084;
-    color: white;
-    cursor: pointer;
-    width: 30%;
-}
-
-/* appointment summary table */
-
-.appointment__summary h2 {
-    color: #1E489E;
-    padding: 20px;
-}
-
-.appointment__summary table {
-    width: 80%;
-    margin-left: 10%;
-    border-collapse: separate;
-    border-spacing: 5px;
-}
-
-.appointment__summary table tr th,
-.appointment__summary table tr td {
-    border: none;
-}
-
-
-.appointment__summary th,
-.appointment__summary td {
-    border: 1px solid black;
-    padding: 10px;
-    text-align: center;
-}
-
-#appointment__summary__table__header {
-    background-color: #210084;
-    color: white;
-}
-
-.appointment__summary table tr {
-    background-color: #5a89ee;
-    color: white;
-}
-
-.appointment__summary table tr button {
-    padding: 10px;
-    border-radius: 15px;
-    border: none;
-    background-color: #EE2400;
-    color: white;
-    cursor: pointer;
+    border: #1E489E 3px solid;
+    border-radius: 20px;
     width: 100%;
+    padding: 20px;
+}
+
+.feedback__section1__sub img {
+    margin-left: 100px;
+    margin-right: 90px;
+}
+
+.feedback__section2__sub1 form input,
+.feedback__section2__sub1 form textarea,
+.feedback__section2__sub1 form select {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: #1E489E 2px solid;
+    border-radius: 10px;
+}
+
+.feedback__section2__sub1 form input:focus,
+.feedback__section2__sub1 form textarea:focus,
+.feedback__section2__sub1 form select:focus {
+    outline: none;
+}
+
+.feedback__section2__sub1 form input[type="submit"] {
+    background-color: #1E489E;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+}
+
+.feedback__section2__sub1 {
+    padding: 20px;
 }
 
 /* footer */
@@ -360,6 +317,22 @@ html {
     .appointment__section1 button {
         width: 50%;
     }
+
+    .feedback__section1 img {
+        display: none;
+    }
+
+    .feedback__section1__sub img {
+        margin-left: 0px;
+    }
+
+    .feedback {
+        margin: 20px;
+    }
+
+    .feedback__section2 h1 {
+        font-size: 39px;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -389,4 +362,19 @@ html {
         font-size: 12px;
     }
 
+    .feedback__section1 img {
+        display: none;
+    }
+
+    .feedback__section1__sub img {
+        margin-left: 0px;
+    }
+
+    .feedback {
+        margin: 20px;
+    }
+
+    .feedback__section2 h1 {
+        font-size: 39px;
+    }
 }
