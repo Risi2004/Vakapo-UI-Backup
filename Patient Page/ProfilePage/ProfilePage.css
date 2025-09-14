@@ -45,6 +45,7 @@ html {
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 2;
 }
 
 .navbar__section1 img {
@@ -206,6 +207,176 @@ html {
     transition: 0.5s;
 }
 
+/* personal information */
+
+.personal__information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.personal__information__section1 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.personal__information__section2 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    height: 300px;
+    position: relative;
+}
+
+.personal__information__section2 button {
+    padding: 10px;
+    width: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: #1E489E;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+}
+
+.personal__information__section2 h1 {
+    color: #1E489E;
+}
+
+.personal__information__section2 table {
+    border-collapse: separate;
+    border-spacing: 20px;
+}
+
+/* appointment booking*/
+
+.appointment {
+    text-align: center;
+    color: white;
+}
+
+.appointment__section1 h1 {
+    color: #1E489E;
+}
+
+.appointment__section2 {
+    padding: 40px;
+    background-color: #1157ee;
+    width: 50%;
+    margin-left: 23%;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.appointment__section2 h2 {
+    color: white;
+}
+
+.appointment__section3 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.appointment__section3__sub1 select,
+.appointment__section3__sub2 select,
+.appointment__section4__sub1 input,
+.appointment__section4__sub2 select {
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 200px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-top: 10px;
+}
+
+.appointment__section4 {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+}
+
+.appointment__section1 button {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #210084;
+    color: white;
+    cursor: pointer;
+    width: 30%;
+}
+
+/* latest appointment history & vaccination history page */
+.history {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+
+.appointment__summary h2 {
+    color: #1E489E;
+    padding: 20px;
+    margin-left: 8%;
+}
+
+.appointment__summary table {
+    width: 80%;
+    margin-left: 10%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.appointment__summary table tr th,
+.appointment__summary table tr td {
+    border: none;
+}
+
+.appointment__summary th,
+.appointment__summary td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#appointment__summary__table__header {
+    background-color: #210084;
+    color: white;
+}
+
+.appointment__summary table tr {
+    background-color: #5a89ee;
+    color: white;
+}
+
+.appointment__summary__section1 button {
+    color: white;
+    background-color: #1E489E;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    margin-right: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.appointment__summary__section1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+}
+
+
+
 
 /* footer */
 
@@ -246,6 +417,41 @@ html {
     .profile {
         display: none;
     }
+
+    .personal__information {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .personal__information__section1 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .personal__information__section2 {
+        padding-bottom: 60px;
+    }
+
+    .history{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .personal__information {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .personal__information__section1 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .personal__information__section2 {
+        padding-bottom: 60px;
+    }
+
 }
 
 @media screen and (max-width: 1300px) {
