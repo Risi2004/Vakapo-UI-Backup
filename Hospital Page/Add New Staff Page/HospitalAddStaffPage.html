@@ -7,7 +7,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./HospitalFeedbackPage.css">
+    <link rel="stylesheet" href="./HospitalAddStaffPage.css">
 </head>
 
 <body>
@@ -24,9 +24,9 @@
         </div>
         <div class="navbar__section2">
             <a href="../Landing Page/HospitalLandingPage.html">Home</a>
-            <a href="../Appointment Page/HospitalAppointmentPage.html">Appointments</a>
+            <a href="../Appointment Page/AppointmentPage.html">Appointments</a>
             <a href="../Staff Page/HospitalStaffPage.html">Staff</a>
-            <a href="../Feedback Page/HospitalFeedbackPage.html">Feedback</a>
+            <a href="../HospitalFeedbackPage.html">Feedback</a>
         </div>
         <div class="navbar__section3">
             <img src="../../Images/profile.png" alt="profile">
@@ -62,39 +62,54 @@
         </div>
     </div>
 
+    <!-- Add Staff Page -->
 
-    <!-- Feedback Section -->
-    <div class="feedback">
-        <div class="feedback__section1">
-            <img src="../../Images/feedback.png" alt="feedback">
-        </div>
+    <div class="add__staff">
+        <h1>Add New Staff</h1>
+        <div class="add__staff__section1">
+            <form action="">
+                <div class="add__staff__section1__sub">
+                    <div>
+                        <label for="name">Name</label> <br>
+                        <input type="text" id="name" name="name"> <br>
+                    </div>
+                    <div>
+                        <label for="qualification">Qualification</label> <br>
+                        <input type="text" id="qualification" name="qualification"> <br>
+                    </div>
 
-        <div class="feedback__section2">
-            <h1>Share Your Feedback</h1>
-            <div class="feedback__section1__sub">
-                <img src="../../Images/logo.png" alt="logo">
-                <div class="feedback__section2__sub1">
-                    <form action="">
-                        <input type="text" id="name" name="name" placeholder="Name"> <br>
-
-                        <input type="email" id="email" name="email" placeholder="Email"> <br>
-
-                        <input type="contactno" id="contactno" name="contactno" placeholder="Contact No"> <br>
-
-                        <select id="rating" name="rating">
-                            <option value="">Select Rating</option>
-                            <option value="1">⭐ 1 - Poor</option>
-                            <option value="2">⭐⭐ 2 - Fair</option>
-                            <option value="3">⭐⭐⭐ 3 - Good</option>
-                            <option value="4">⭐⭐⭐⭐ 4 - Very Good</option>
-                            <option value="5">⭐⭐⭐⭐⭐ 5 - Excellent</option>
-                        </select> <br>
-
-                        <textarea id="message" name="message" placeholder="Message Here"></textarea> <br>
-                        <input type="submit" value="Submit">
-                    </form>
                 </div>
-            </div>
+                <br>
+                <div class="add__staff__section1__sub">
+                    <div>
+                        <label for="role">Role:</label>
+                        <select id="role" name="role">
+                            <option value="" disabled selected>Select a role</option>
+                            <option value="doctor">Doctor</option>
+                            <option value="nurse">Nurse</option>
+                        </select> <br>
+                    </div>
+                    <div>
+                        <label for="regnumber">Registration Number</label> <br>
+                        <input type="text" id="regnumber" name="regnumber"> <br>
+                    </div>
+                </div>
+                <br>
+                <label for="nic">NIC</label> <br>
+                <input type="text" id="nic" name="nic"> <br> <br>
+
+                <label for="email">Email</label> <br>
+                <input type="email" id="email" name="email"> <br> <br>
+
+                <label for="phone">Mobile Number</label> <br>
+                <input type="tel" id="phone" name="phone"> <br> <br>
+
+                <label for="address">Address</label> <br>
+                <input type="text" id="address" name="address"> <br> <br>
+
+                <button type="submit">Send Invitation</button>
+            </form>
+
         </div>
     </div>
 
@@ -104,7 +119,7 @@
         <p>&copy; 2025 VakaPo. All Rights Reserved</p>
     </div>
 
-    <script src="./HospitalFeedbackPage.js"></script>
+    <script src="./HospitalAddStaffPage.js"></script>
 </body>
 
 </html>
