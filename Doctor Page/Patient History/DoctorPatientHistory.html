@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Appointment Page</title>
+    <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./DoctorAppointmentPage.css">
+    <link rel="stylesheet" href="./DoctorPatientHistory.css">
 </head>
 
 <body>
@@ -62,43 +62,33 @@
         </div>
     </div>
 
-    <!-- Manage Appointment Section -->
-    <div class="manage__appointment">
-        <h1>Manage Appointmnets</h1> <br>
-        <div class="manage__appointment__section1">
-            <p>Lanka Hospital</p>
-            <p>Royal Hospital</p>
-            <p>Delmon Hospital</p>
+    <!-- Patient History Section -->
+    <div class="patient">
+        <div class="patient__section1">
+            <input type="text" placeholder="Search Patient ID...">
+            <img src="../../Images/search.png" alt="search">
         </div>
-        <br>
-        <p class="manage__appointment__section2">Lanka Hospital</p>
-        <table>
-            <tr id="manage__appointment__table__header">
-                <th>Patient Name</th>
-                <th>Date</th>
-                <th>Time</th>
-                <th>Vaccine</th>
-                <th>Action</th>
-            </tr>
-            <tr>
-                <td>Kalai</td>
-                <td>2025-02-2024</td>
-                <td>11.30 a.m.</td>
-                <td>Influenza</td>
-                <td>
-                    <img src="../../Images/correct.png" alt="confirm">
-                    <img src="../../Images/wrong.png" alt="cancel">
-                </td>
-            </tr>
-        </table>
-    </div> <br>
-
-    <!-- Footer Section -->
-    <div class="footer">
-        <p>VakaPo | Making Vaccination booking simple & seecure </p>
-        <p>&copy; 2025 VakaPo. All Rights Reserved</p>
+        <div class="patient__section2">
+            <h2>Recent Updates</h2>
+            <div class="patient__section2__sub">
+                <div class="patient__section2__sub__sub">
+                    <p>VP1234</p>
+                    <p>1 Day Ago</p>
+                </div> <br>
+                <div class="patient__section2__sub__sub">
+                    <p>VP2345</p>
+                    <p>1 Day Ago</p>
+                </div> <br>
+                <div class="patient__section2__sub__sub">
+                    <p>VP3456</p>
+                    <p>1 Day Ago</p>
+                </div> <br>
+            </div>
+        </div>
     </div>
-    <script src="./DoctorAppointmentPage.js"></script>
+
+
+    <script src="./DoctorPatientHistory.js"></script>
 </body>
 
 </html>
