@@ -41,3 +41,17 @@ profile.addEventListener("click" , function(){
 cancelProfile.addEventListener("click" , function(){
     profileBox.style.right = "-20%"
 })
+
+// dosage level popup
+
+const dosageEditButton = document.querySelector(".vaccination__table__sub img")   
+const dosageCancelButton = document.querySelector(".dosage__level img")
+const dosageLevelPopup = document.querySelector(".dosage__level")
+
+dosageEditButton.addEventListener("click", function(){
+    dosageLevelPopup.style.display = "block"
+})
+
+dosageCancelButton.addEventListener("click", function(){
+    dosageLevelPopup.style.display = "none"
+})

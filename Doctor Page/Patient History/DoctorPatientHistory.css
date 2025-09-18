@@ -45,6 +45,7 @@ html {
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 2;
 }
 
 .navbar__section1 img {
@@ -208,11 +209,11 @@ html {
 
 /* patient search  */
 
-.patient{
+.patient {
     padding: 20px;
 }
 
-.patient__section1{
+.patient__section1 {
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -225,27 +226,27 @@ html {
     border-radius: 40px;
 }
 
-.patient__section1 input{
+.patient__section1 input {
     padding: 10px;
     width: 100%;
     border: none;
     font-size: 15px;
 }
 
-.patient__section1 input:focus{
+.patient__section1 input:focus {
     outline: none;
 }
 
-.patient__section1 img{
+.patient__section1 img {
     cursor: pointer;
 }
 
-.patient__section2 h2{
+.patient__section2 h2 {
     color: #1E489E;
     margin-bottom: 20px;
 }
 
-.patient__section2__sub__sub{
+.patient__section2__sub__sub {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -254,8 +255,143 @@ html {
 }
 
 
+/* personal information */
+
+.personal__information {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.personal__information__section1 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.personal__information__section2 {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px;
+    height: 300px;
+    position: relative;
+}
+
+.personal__information__section2 h1 {
+    color: #1E489E;
+}
+
+.personal__information__section2 table {
+    border-collapse: separate;
+    border-spacing: 20px;
+}
 
 
+/* vaccination history & pending vaccination history page */
+.history {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+}
+
+.vaccination__summary h2 {
+    color: #1E489E;
+    padding: 20px;
+    margin-left: 8%;
+}
+
+.vaccination__summary table {
+    width: 80%;
+    margin-left: 10%;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+.vaccination__summary table tr th,
+.vaccination__summary table tr td {
+    border: none;
+}
+
+.vaccination__summary th,
+.vaccination__summary td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+#vaccination__summary__table__header {
+    background-color: #210084;
+    color: white;
+}
+
+.vaccination__summary table tr {
+    background-color: #5a89ee;
+    color: white;
+}
+
+.vaccination__summary__section1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10%;
+}
+
+.vaccination__table__sub {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.vaccination__table__sub img {
+    cursor: pointer;
+}
+
+/* dosage level */
+
+.dosage__level {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    position: absolute;
+    bottom: -500px;
+    left: 40%;
+    width: fit-content;
+    background-color: whitesmoke;
+    display: none;
+}
+
+.dosage__level img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.dosage__level button {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #1E489E;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+}
+
+.dosage__level input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid black;
+    font-size: 15px;
+    border-radius: 10px;
+}
 
 /* footer */
 
@@ -293,6 +429,45 @@ html {
     .profile {
         display: none;
     }
+
+    .personal__information {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .personal__information__section1 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .personal__information__section2 {
+        padding-bottom: 60px;
+    }
+
+    .history {
+        font-size: 14px;
+    }
+
+    .vaccination__table__sub {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .personal__information {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .personal__information__section1 img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .personal__information__section2 {
+        padding-bottom: 60px;
+    }
+
 }
 
 @media screen and (max-width: 1300px) {
